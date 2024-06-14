@@ -1,0 +1,725 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bootstrap_4_5_2.min.css" >
+   
+    <link href='https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/ui-lightness/jquery-ui.css' rel='stylesheet'>
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="bootstrap-multiselect.css">
+    
+    <style>
+
+    </style>
+    <title>SickleCell Form</title>
+  </head>
+  <body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+
+                <fieldset class="the-fieldset">
+                    <legend class="the-legend">Personal details:</legend>
+                    <div class="row">
+
+                        <div class="col-12">
+                            <ul class="patientType customRadio">
+                                <li><label>Patient Type</label></li>
+                                <li>
+                                    <input type="radio" id="test1" name="radio-group" checked>
+                                    <label for="test1">Newly Registered</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="test2" name="radio-group">
+                                    <label for="test2">Existing Treatment (already treatment is going on)</label>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Patient current status</label>
+                                <select class="form-control form-control-sm">
+                                    <option>Poor</option>
+                                    <option>Good</option>
+                                </select>
+                            </div>
+                        </div>
+
+
+                        <div class="col-md-4">
+                            <ul class="inputWithbtn">
+                                <li>
+                                    <div class="form-group">
+                                        <label for="Age">Age</label>
+                                        <input type="text" class="form-control form-control-sm mb-2"  placeholder="Age">
+                                      </div>
+                                </li>
+                               <li>
+                                <button type="submit" class="btn btn-info btn-sm mb-3">Confirm</button>
+                               </li>                                  
+                            </ul>
+                        </div>
+
+                        <div class="col-md-4">
+                            <ul class="inputWithbtn">
+                                <li>
+                                    <div class="form-group">
+                                        <label for="">Blood Group</label>
+                                        <input type="text" class="form-control form-control-sm mb-2"  placeholder="Blood Group">
+                                    </div>
+                                </li>
+                               <li>
+                                    <button type="submit" class="btn btn-info btn-sm mb-3">Confirm</button>
+                               </li>                                  
+                            </ul>
+                        </div>
+
+                        <div class="col-12 text-center">
+                            <div class="notesBox">Age & blood Group may be uploaded by Doctor</small>
+                        </div>
+                        
+                                      
+                        
+                    </div>
+                </fieldset>
+
+
+
+               
+
+
+             
+
+              
+
+
+                <fieldset class="the-fieldset">
+                    <legend class="the-legend">Blood Transfution</legend>
+
+                    <div class="row">
+                        <div class="col-12 text-right pb-2">
+                            <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#staticBackdrop">
+                                Launch static backdrop modal
+                            </button>
+                        </div>
+
+                        <div class="col-md-3">
+                           
+                                <div class="form-group">
+                                    <label for="Since">Test Date</label>  
+                                    <div class="input-group">
+                                        <input class="form-control form-control-sm py-2  border" type="text" id="date_picker02">
+                                        <span class="input-group-append ml-n1">
+                                          <div class="input-group-text bg-transparent">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar-check-fill" viewBox="0 0 16 16">
+                                                <path d="M4 .5a.5.5 0 0 0-1 0V1H2a2 2 0 0 0-2 2v1h16V3a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-1 0V1H4zM16 14V5H0v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2m-5.146-5.146-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708.708"/>
+                                              </svg>    
+                                        </div>
+                                        </span>
+                                     </div>
+                                </div>
+                            
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label for="Age">Draug Name</label>
+                                <select  class="form-control form-control-sm">
+                                    <option selected>Open this select menu</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                  </select>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label for="Age"> test Name</label>
+                                <input type="text" class="form-control form-control-sm" placeholder="text">                                   
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label for="Age"> test Name</label>
+                                <input type="text" class="form-control form-control-sm" placeholder="text">                                   
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+
+               
+
+               
+
+                <div class="col-12 text-center pb-3">
+                    <button class="btn btn-sm btn-primary">Submit</button>&nbsp;
+                    <button class="btn btn-sm btn-info">Print</button>
+                </div>
+
+
+
+            </div>
+
+
+            <div class="col-12 fromTabs">
+                <ul class="tabs">
+                    <li data-tab-target="#home" class="active tab">Personal details</li>
+                    <li data-tab-target="#pricing" class="tab">Symptoms</li>
+                    <li data-tab-target="#about" class="tab">Blood Transfution</li>
+                    <li data-tab-target="#news" class="tab">Lab Repoart Section</li>
+                    <li data-tab-target="#existingDes" class="tab">Existing</li>
+                    
+                  </ul>
+                  
+                  <div class="tab-content">
+                    <div id="home" data-tab-content class="active">
+
+                        <fieldset class="the-fieldset">
+                            <legend class="the-legend">Personal details:</legend>
+                            <div class="row">
+        
+                                <div class="col-12">
+                                    <ul class="patientType customRadio">
+                                        <li><label>Patient Type</label></li>
+                                        <li>
+                                            <input type="radio" id="test1" name="radio-group" checked>
+                                            <label for="test1">Newly Registered</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" id="test2" name="radio-group">
+                                            <label for="test2">Existing Treatment (already treatment is going on)</label>
+                                        </li>
+                                    </ul>
+                                </div>
+        
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">Patient current status</label>
+                                        <select class="form-control form-control-sm">
+                                            <option>Poor</option>
+                                            <option>Good</option>
+                                        </select>
+                                    </div>
+                                </div>
+        
+        
+                                <div class="col-md-4">
+                                    <ul class="inputWithbtn">
+                                        <li>
+                                            <div class="form-group">
+                                                <label for="Age">Age</label>
+                                                <input type="text" class="form-control form-control-sm mb-2"  placeholder="Age">
+                                              </div>
+                                        </li>
+                                       <li>
+                                        <button type="submit" class="btn btn-info btn-sm mb-3">Confirm</button>
+                                       </li>                                  
+                                    </ul>
+                                </div>
+        
+                                <div class="col-md-4">
+                                    <ul class="inputWithbtn">
+                                        <li>
+                                            <div class="form-group">
+                                                <label for="">Blood Group</label>
+                                                <input type="text" class="form-control form-control-sm mb-2"  placeholder="Blood Group">
+                                            </div>
+                                        </li>
+                                       <li>
+                                            <button type="submit" class="btn btn-info btn-sm mb-3">Confirm</button>
+                                       </li>                                  
+                                    </ul>
+                                </div>
+        
+                                <div class="col-12 text-center">
+                                    <div class="notesBox">Age & blood Group may be uploaded by Doctor</small>
+                                </div>
+
+
+
+                                <div class="row">
+        
+                                    <div class="col-12">
+                                        <ul class="patientType customRadio">
+                                            <li><label>vaccine given</label></li>
+                                            <li>
+                                                <input type="radio" id="test3" name="radio-group" checked="">
+                                                <label for="test3">Yes</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" id="test4" name="radio-group">
+                                                <label for="test4">No</label>
+                                            </li>
+                                        </ul>
+                                    </div>
+            
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1">Dose</label>
+                                            <select class="form-control form-control-sm">
+                                                <option>First</option>
+                                                <option>Second</option>
+                                            </select>
+                                        </div>
+                                    </div>
+            
+            
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label for="Since">Date</label>  
+                                            <div class="input-group">
+                                                <input class="form-control form-control-sm py-2  border" type="text" id="date_picker05">
+                                                <span class="input-group-append ml-n1">
+                                                  <div class="input-group-text bg-transparent">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar-check-fill" viewBox="0 0 16 16">
+                                                        <path d="M4 .5a.5.5 0 0 0-1 0V1H2a2 2 0 0 0-2 2v1h16V3a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-1 0V1H4zM16 14V5H0v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2m-5.146-5.146-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708.708"/>
+                                                      </svg>    
+                                                </div>
+                                                </span>
+                                             </div>
+                                        </div>
+                                    </div>
+            
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label for="">Vaccine centre name/HF Name</label>
+                                            <input type="text" class="form-control form-control-sm mb-2" placeholder="Vaccine centre name">
+                                        </div>
+                                    </div>
+            
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+                                            <label for="Since">Next Vaccination Date</label>  
+                                            <div class="input-group">
+                                                <input class="form-control form-control-sm py-2  border" type="text" id="date_picker06">
+                                                <span class="input-group-append ml-n1">
+                                                  <div class="input-group-text bg-transparent">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar-check-fill" viewBox="0 0 16 16">
+                                                        <path d="M4 .5a.5.5 0 0 0-1 0V1H2a2 2 0 0 0-2 2v1h16V3a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-1 0V1H4zM16 14V5H0v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2m-5.146-5.146-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708.708"/>
+                                                      </svg>    
+                                                </div>
+                                                </span>
+                                             </div>
+                                        </div>
+                                    </div>     
+                                    
+                                </div>
+
+
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label for="Age">Instruction</label>
+                                            <input type="text" class="form-control form-control-sm" placeholder="text">                                   
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label for="Since">Next follow up date</label>  
+                                            <div class="input-group">
+                                                <input class="form-control form-control-sm py-2  border" type="text" id="date_picker04">
+                                                <span class="input-group-append ml-n1">
+                                                <div class="input-group-text bg-transparent">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar-check-fill" viewBox="0 0 16 16">
+                                                        <path d="M4 .5a.5.5 0 0 0-1 0V1H2a2 2 0 0 0-2 2v1h16V3a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-1 0V1H4zM16 14V5H0v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2m-5.146-5.146-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708.708"/>
+                                                    </svg>    
+                                                </div>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                       
+
+                        
+
+
+                       
+                    </div>
+                    <div id="pricing" data-tab-content>
+                        <fieldset class="the-fieldset">
+                            <legend class="the-legend">Symptoms:</legend>
+        
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="Age">Select Campalint</label>
+                                        <input type="text" class="form-control form-control-sm"  placeholder="Age">
+                                    </div>
+                                </div>
+        
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="Since">Since</label>
+                                        <!-- <input type="text" class="form-control form-control-sm"   placeholder="Age"> -->
+                                        <div class="input-group">
+                                            <input class="form-control form-control-sm py-2  border" type="text" id="my_date_picker">
+                                            <span class="input-group-append ml-n1">
+                                              <div class="input-group-text bg-transparent">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar-check-fill" viewBox="0 0 16 16">
+                                                    <path d="M4 .5a.5.5 0 0 0-1 0V1H2a2 2 0 0 0-2 2v1h16V3a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-1 0V1H4zM16 14V5H0v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2m-5.146-5.146-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708.708"/>
+                                                </svg>    
+                                            </div>
+                                            </span>
+                                         </div>
+                                    </div>
+                                </div>
+        
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="Age">Select Campalint</label>
+                                        <input type="text" class="form-control form-control-sm"  placeholder="Age">
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="table-responsive">
+                                        <table class="table table-sm table-bordered">
+                                            <thead>
+                                                <tr>
+                                                    <th>Campalint</th>
+                                                    <th>Since</th>
+                                                    <th>Type</th>
+                                                    <th class="text-nowrap">Action</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        text 01
+                                                    </td>
+                                                    <td>01/06/2024</td>
+                                                    <td>daily</td>
+                                                    <td>
+                                                        <button class="btn btn-sm btn-info"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                                                            <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+                                                            <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z"/>
+                                                          </svg>&nbsp;Edit</button>
+                                                        <button class="btn btn-sm btn-danger"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3-fill" viewBox="0 0 16 16">
+                                                            <path d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5m-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5M4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06m6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528M8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5"/>
+                                                          </svg>&nbsp; Delete</button>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+                        
+                    </div>
+                    <div id="about" data-tab-content>
+                        <fieldset class="the-fieldset">
+                            <legend class="the-legend">Blood Transfution</legend>
+        
+                            <div class="row">
+                                <div class="col-12 text-right pb-2">
+                                    <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#staticBackdrop">
+                                        Launch static backdrop modal
+                                    </button>
+                                </div>
+        
+                                <div class="col-md-3">
+                                   
+                                        <div class="form-group">
+                                            <label for="Since">Test Date</label>  
+                                            <div class="input-group">
+                                                <input class="form-control form-control-sm py-2  border" type="text" id="date_picker02">
+                                                <span class="input-group-append ml-n1">
+                                                  <div class="input-group-text bg-transparent">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar-check-fill" viewBox="0 0 16 16">
+                                                        <path d="M4 .5a.5.5 0 0 0-1 0V1H2a2 2 0 0 0-2 2v1h16V3a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-1 0V1H4zM16 14V5H0v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2m-5.146-5.146-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708.708"/>
+                                                      </svg>    
+                                                </div>
+                                                </span>
+                                             </div>
+                                        </div>
+                                    
+                                </div>
+        
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label for="Age">Draug Name</label>
+                                        <select  class="form-control form-control-sm">
+                                            <option selected>Open this select menu</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                          </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label for="Age"> test Name</label>
+                                        <input type="text" class="form-control form-control-sm" placeholder="text">                                   
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label for="Age"> test Name</label>
+                                        <input type="text" class="form-control form-control-sm" placeholder="text">                                   
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+                    <div id="news" data-tab-content>
+                        <fieldset class="the-fieldset">
+                            <legend class="the-legend">Lab Repoart Section</legend>
+        
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="Age">Select test Name</label>
+                                        <select  id="multipleTwo" multiple  class="form-control form-control-sm">
+                                            <option selected>Open this select menu</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                          </select>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="row">
+                                <div class="col-12">
+                                        <div class="forSubheading">For CBC</div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="Since">Test Date</label>  
+                                        <div class="input-group">
+                                            <input class="form-control form-control-sm py-2  border" type="text" id="date_picker02">
+                                            <span class="input-group-append ml-n1">
+                                              <div class="input-group-text bg-transparent">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar-check-fill" viewBox="0 0 16 16">
+                                                    <path d="M4 .5a.5.5 0 0 0-1 0V1H2a2 2 0 0 0-2 2v1h16V3a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-1 0V1H4zM16 14V5H0v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2m-5.146-5.146-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708.708"/>
+                                                  </svg>    
+                                            </div>
+                                            </span>
+                                         </div>
+                                    </div>
+                                </div>
+        
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="Age">Select test Name</label>
+                                        <select  class="form-control form-control-sm">
+                                            <option selected>Open this select menu</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                          </select>
+                                    </div>
+                                </div>
+        
+                            </div>
+        
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="forSubheading">For LFT</div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="Since">Test Date</label>  
+                                        <div class="input-group">
+                                            <input class="form-control form-control-sm py-2  border" type="text" id="date_picker02">
+                                            <span class="input-group-append ml-n1">
+                                              <div class="input-group-text bg-transparent">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar-check-fill" viewBox="0 0 16 16">
+                                                    <path d="M4 .5a.5.5 0 0 0-1 0V1H2a2 2 0 0 0-2 2v1h16V3a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-1 0V1H4zM16 14V5H0v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2m-5.146-5.146-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708.708"/>
+                                                  </svg>    
+                                            </div>
+                                            </span>
+                                         </div>
+                                    </div>
+                                </div>
+        
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="Age"> test Name</label>
+                                        <input type="text"  class="form-control form-control-sm" placeholder="text">
+                                           
+                                    </div>
+                                </div>
+        
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="Age"> test Name</label>
+                                        <input type="text"  class="form-control form-control-sm" placeholder="text">                                   
+                                    </div>
+                                </div>
+        
+                            </div>
+        
+        
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="forSubheading">Medicine</div>
+                                </div>
+        
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label for="Age">Draug Name</label>
+                                        <select  class="form-control form-control-sm">
+                                            <option selected>Open this select menu</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                          </select>
+                                    </div>
+                                </div>
+        
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label for="Age"> test Name</label>
+                                        <input type="text"  class="form-control form-control-sm" placeholder="text">                                   
+                                    </div>
+                                </div>
+        
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label for="Age"> test Name</label>
+                                        <input type="text"  class="form-control form-control-sm" placeholder="text">                                   
+                                    </div>
+                                </div>
+        
+                                <div class="col-md-3 addRemoveSection">
+                                    <div class="form-group">
+                                        <label for="Age"> test Name</label>
+                                        <input type="text"  class="form-control form-control-sm" placeholder="text">                                   
+                                    </div>
+                                    <ul class="AddRemove">
+                                        <li><div class="add"></div></li>
+                                        <li><div class="minus"></div></li>
+                                    </ul>
+                                </div>
+        
+                            </div>    
+        
+                          
+                        </fieldset>
+                    </div>
+
+                    <div id="existingDes" data-tab-content>
+                        <fieldset class="the-fieldset">
+                            <legend class="the-legend">Any existing database</legend>
+        
+                            <div class="row">
+                                <div class="col-md-4">
+        
+                                    <div class="form-group">
+                                        <label for="Age">Select Campalint</label>
+                                        <select  id="multiple-checkboxes" class="form-control form-control-sm" multiple="multiple">
+                                            <option selected>Open this select menu</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                          </select>
+                                    </div>
+        
+        
+                                    
+                                </div>
+                            </div>
+        
+                          
+                        </fieldset>
+        
+                    </div>
+                  
+                  </div>
+                  
+                        
+                       
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+        <div class="modal fade" id="exampleModal" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                hi
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+            </div>
+        </div>
+
+    <script src="jquery.min.js"></script>
+    <script src="popper.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+    
+    <!-- <script src="bootstrap.bundle.min.js"></script> -->
+    <script src="jquery-ui.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="bootstrap-multiselect.js"></script>
+    <script>
+        $(document).ready(function () {
+ 
+            $(function () {
+                $("#my_date_picker").datepicker();
+                $("#date_picker02").datepicker();
+                $("#date_picker04").datepicker();
+                $("#date_picker05").datepicker();
+                $("#date_picker06").datepicker();
+            });
+            
+        }) 
+
+        $(document).ready(function() {
+            $('#multiple-checkboxes').multiselect({
+                includeSelectAllOption: true
+            });
+
+            // $('#multipleTwo').multiselect({
+            //     includeSelectAllOption: true
+            // });
+
+            
+        });
+
+        $(document).ready(function () {
+            $('#multipleTwo').multiselect({        
+                includeSelectAllOption: true,
+                nonSelectedText: 'Select an Option' 
+            });
+        });
+
+        const tabs = document.querySelectorAll('[data-tab-target]')
+        const tabContents = document.querySelectorAll('[data-tab-content]')
+
+        tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+            const target = document.querySelector(tab.dataset.tabTarget)
+            tabContents.forEach(tabContent => {
+            tabContent.classList.remove('active')
+            })
+            tabs.forEach(tab => {
+            tab.classList.remove('active')
+            })
+            tab.classList.add('active')
+            target.classList.add('active')
+        })
+        })
+    </script>
+  </body>
+</html>

@@ -1,0 +1,323 @@
+
+:root{   
+    --green:#89c149;
+    --red:#dc3545;
+    --blue02: #1B97E2;
+}
+
+.the-fieldset {
+    border: 1px solid var(--green);
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    margin: 15px 0 15px 0;
+}
+  
+  .the-legend {
+    background-color: var(--green);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: 600;
+    display: inline-block;
+    width: auto;
+    font-size: 1.25rem;
+  }
+
+  ul{
+    list-style: none;
+  }
+
+
+  ul.patientType{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0 0 10px 0;
+
+  }
+  ul.patientType li{
+    padding: 0 10px;
+  }
+
+  ul.patientType li:nth-child(1) label{
+    font-weight: 600;
+    color: #555;
+  }
+
+  .the-fieldset .form-group label{
+    font-weight: 600;
+    margin-bottom: 4px;
+    display: flex;
+  }
+  .inputWithbtn{
+    display: flex;
+    align-items: end;  
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    width: 100%;  
+  }
+
+  .inputWithbtn li:nth-child(1){    
+    width: 100%;  
+  }
+
+  .inputWithbtn input{
+    width: calc(100% - 10px);
+  }
+
+.customRadio  [type="radio"]:checked,
+.customRadio [type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+.customRadio [type="radio"]:checked + label,
+.customRadio [type="radio"]:not(:checked) + label
+{
+    position: relative;
+    padding-left: 28px;
+    cursor: pointer;
+    line-height: 20px;
+    display: inline-block;
+    color: #666;
+    font-size: 14px;
+}
+.customRadio [type="radio"]:checked + label:before,
+.customRadio [type="radio"]:not(:checked) + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #ddd;
+    border-radius: 100%;
+    background: #fff;
+}
+.customRadio [type="radio"]:checked + label:after,
+.customRadio [type="radio"]:not(:checked) + label:after {
+    content: '';
+    width: 12px;
+    height: 12px;
+    background: #F87DA9;
+    background: var(--red);
+    
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    border-radius: 100%;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+.customRadio [type="radio"]:not(:checked) + label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+.customRadio [type="radio"]:checked + label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+
+.notesBox {
+    position: relative;
+    background: #f7f8fa;
+    display: flex;
+    align-items: center;
+    padding: 8px 15px;
+    font-size: 0.9rem;
+    font-weight: normal;
+    color: #101010;
+    margin: 10px 0;
+    line-height: 1.5;
+    border-right: solid 1px var(--red);
+}
+.notesBox::after {
+    position: absolute;
+    content: '';
+    width: 5px;
+    height: 100%;
+    background: var(--red);
+    left: 0;
+}
+
+.forSubheading{
+    color: var(--red);    
+    font-size: 1.05rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    position: relative;
+    padding-bottom: 10px;
+    margin: 10px 0 20px;
+}
+.forSubheading::before {
+  position: absolute;
+  content: '';
+  width: calc(100% - 50px);
+  height: 1px;
+  background: #e7e7e7;
+  top: calc(100% + 2px);
+  left: 50px;
+}
+.forSubheading::after {
+  position: absolute;
+  content: '';
+  width: 50px;
+  height: 5px;
+  background: var(--red);
+  top: 100%;
+  left: 0;
+}
+
+
+/* Tabs Content */
+[data-tab-content] {
+  display: none;
+}
+
+.fromTabs .active[data-tab-content] {
+  display: block;
+}
+
+.fromTabs .tabs {
+  display: flex;
+  flex-wrap: nowrap;  
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid  #e9a8a8;
+  box-sizing: border-box;
+  
+}
+
+.fromTabs .tab {
+  cursor: pointer;
+  padding: 10px;
+}
+.fromTabs .tabs li:not(:last-child){
+  margin-right:5px;
+}
+
+.fromTabs .tabs li{
+  cursor: pointer;
+  padding: 10px 15px;  
+  background-color: #f7f8fa;
+  color: #101010;
+  font-weight: 600;
+  border-top-right-radius: 2px;
+  border-top-left-radius: 2px;
+}
+
+.fromTabs .tab.active {
+  background-color: var(--red)!important;
+  color: #fff;;
+  position: relative;
+}
+
+
+
+.fromTabs .tab.active:after {
+  content: '';
+  top: 100%;
+  width: 0; 
+  height: 0; 
+  position: absolute;content: '';
+  border-top: 7px solid var(--red);
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  margin: auto;
+  left: 0;
+  right: 0;
+}
+/* .fromTabs .tab.active:before {
+  content: '';
+  top: calc(100% + 7px);
+  width: 0; 
+  height: 0; 
+  position: absolute;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-bottom: 7px solid #eaf4fd;
+  margin: auto;
+  left: 0;
+  right: 0;
+} */
+
+.fromTabs .tab:hover {
+  background-color: #AAA;
+}
+
+.fromTabs .tab-content {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0px 15px;
+  /* background:#eaf4fd; */
+  margin: 10px 0 15px; 
+  border-radius: 4px;
+  border: solid #efe8e8 1px;
+}
+
+.addRemoveSection{
+  width: 100%;
+  display: flex;
+}
+.addRemoveSection .form-group{
+   width: clac(100% - 105px);
+}
+ul.AddRemove{
+  width: 67px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: end;
+  justify-content: space-between;  
+  padding: 0;
+}
+.add{
+  position: relative;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: var(--green);
+  cursor: pointer;
+}
+.minus{
+  position: relative;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: var(--red);
+  cursor: pointer;
+}
+.add:after {
+  content: "+";
+  font-weight: bold;
+  font-size: 26px;
+  position: absolute;
+  color: #ffffff;
+  top: -7px;
+  left: 5px;
+}
+.minus:after {
+  content: "-";
+  font-weight: bold;
+  font-size: 26px;
+  position: absolute;
+  color: #ffffff;
+  top: -8px;
+  left: 10px;
+}
+
+
+
+
+
+
+
+
