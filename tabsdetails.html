@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bootstrap_4_5_2.min.css" >
+   
+    <link href='https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/ui-lightness/jquery-ui.css' rel='stylesheet'>
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="bootstrap-multiselect.css">
+    
+    <style>
+
+    </style>
+    <title>SickleCell Form</title>
+  </head>
+  <body>
+    <div class="container">
+       
+        <div class="row">
+            
+
+            
+            <div class="col-12">
+                <fieldset class="the-fieldset ">
+                    <legend class="the-legend">Search</legend>
+
+                    <div class="w-100 mt-5 py-2 text-center mb-2">
+                        <label>Serch By name</label>
+                        <div class="input-box">     
+                            <input type="text" placeholder="Search here..." />
+                            <button class="button">Search</button>
+                          </div>
+                    </div>  
+
+                    <div class="forSubheading">Result</div>
+                
+                <div class="table-responsive">
+                    <table class="table table-sm table-bordered table-striped">
+                        <thead>
+                            <tr class="table-primary">
+                                <th>S No.</th>
+                                <th>Name</th>
+                                <th>Gender</th>
+                                <th>Age</th>
+                                <th>guardian name</th>
+                                <th>Mobile Number</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>1</th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th>2</th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th>2</th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="w-100 text-center pb-3">
+                    <button class="btn btn-primary">View Test details</button>
+                    <button class="btn btn-primary">View Medical History</button>
+                    <button class="btn btn-primary">View RCH History</button>
+                    <button class="btn btn-primary">Add Follow Up</button>
+                </div>
+            </fieldset>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+        <div class="modal fade" id="exampleModal" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                hi
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+            </div>
+        </div>
+
+    <script src="jquery.min.js"></script>
+    <script src="popper.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+    
+    <!-- <script src="bootstrap.bundle.min.js"></script> -->
+    <script src="jquery-ui.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="bootstrap-multiselect.js"></script>
+    <script>
+        $(document).ready(function () {
+ 
+            $(function () {
+                $("#my_date_picker").datepicker();
+                $("#date_picker02").datepicker();
+                $("#date_picker04").datepicker();
+                $("#date_picker05").datepicker();
+                $("#date_picker06").datepicker();
+            });
+            
+        }) 
+
+        $(document).ready(function() {
+            $('#multiple-checkboxes').multiselect({
+                includeSelectAllOption: true
+            });
+
+             $('#cbc').multiselect({
+                includeSelectAllOption: true
+             });
+
+            
+        });
+
+        $(document).ready(function () {
+            $('#multipleTwo').multiselect({        
+                includeSelectAllOption: true,
+                nonSelectedText: 'Select an Option' 
+            });
+        });
+
+        const tabs = document.querySelectorAll('[data-tab-target]')
+        const tabContents = document.querySelectorAll('[data-tab-content]')
+
+        tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+            const target = document.querySelector(tab.dataset.tabTarget)
+            tabContents.forEach(tabContent => {
+            tabContent.classList.remove('active')
+            })
+            tabs.forEach(tab => {
+            tab.classList.remove('active')
+            })
+            tab.classList.add('active')
+            target.classList.add('active')
+        })
+        })
+    </script>
+  </body>
+</html>
